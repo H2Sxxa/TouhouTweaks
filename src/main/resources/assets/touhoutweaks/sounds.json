@@ -1,0 +1,16 @@
+{
+    "thtplayerdead": {
+        "category": "player",
+        "subtitle": "touhoutweaks.sound.thtplayerdead",
+        "sounds": [
+            "touhoutweaks:sounddead"
+        ]
+    },
+    "thtpause": {
+        "category": "sound",
+        "subtitle": "touhoutweaks.sound.thtpause",
+        "sounds": [
+            "touhoutweaks:soundpause"
+        ]
+    }
+}

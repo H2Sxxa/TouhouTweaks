@@ -43,7 +43,7 @@ minecraft {
     mcpMappingVersion = '39'
     
     // Set username here, the UUID will be looked up automatically
-    username = 'Developer'
+    username = 'Yuyuko'
     
     // Add any additional tweaker classes here
     // extraTweakClasses.add('org.spongepowered.asm.launch.MixinTweaker')
@@ -93,7 +93,7 @@ repositories {
         }
     }
 
-    if (project.use_mirror) {
+    if (project.use_mirror.toBoolean()) {
         removeIf {
             it instanceof MavenArtifactRepository &&
                 (it.url.toString() == "https://repo.maven.apache.org/maven2/")

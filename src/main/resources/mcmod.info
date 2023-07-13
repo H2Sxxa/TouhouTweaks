@@ -1,14 +1,14 @@
 [
 {
-  "modid": "untitled",
-  "name": "LunarCapital Framework",
-  "description": "A modding framework presented by TeamGensouSpark based on IDF & TDE",
+  "modid": "touhoutweaks",
+  "name": "Touhou Tweaks",
+  "description": "a touhou mod",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": [""],
-  "credits": "Idealland,CleanRoomMC",
+  "authorList": ["H2Sxxa"],
+  "credits": "Team Shanghai Alice,LunarCapitalFramework",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
