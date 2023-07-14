@@ -6,5 +6,8 @@
     "compatibilityLevel": "JAVA_8",
     "mixins": [
       "MixinMinecraft"
+    ],
+    "client":[
+      "MixinI18n"
     ]
   }
