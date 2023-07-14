@@ -23,7 +23,7 @@ public class ModSounds {
     }
 
     public static final SoundEvent SE_PLAYERDEAD = getThtSoundEvent("thtplayerdeath");
-    public static final SoundEvent SE_PLAYERPAUSE = new SoundEvent(new ResourceLocation(Consts.MODID, "thtpause"));
+    public static final SoundEvent SE_PLAYERPAUSE = getThtSoundEvent("thtpause");
 
     @SubscribeEvent
     public static void onSoundEvenrRegistration(RegistryEvent.Register<SoundEvent> event) {
