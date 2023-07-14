@@ -1,5 +1,6 @@
 package io.github.h2sxxa;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -19,7 +20,7 @@ public class MixinInit implements IFMLLoadingPlugin,IEarlyMixinLoader{
     
     @Override
     public List<String> getMixinConfigs() {
-        return Lists.newArrayList("mixins.touhoutweaks.json");
+        return Collections.singletonList("mixins.touhoutweaks.json");
     }
 
     @Override
@@ -31,7 +32,7 @@ public class MixinInit implements IFMLLoadingPlugin,IEarlyMixinLoader{
     @Override
     public String getModContainerClass()
     {
-        return "";
+        return null;
     }
 
     @Nullable

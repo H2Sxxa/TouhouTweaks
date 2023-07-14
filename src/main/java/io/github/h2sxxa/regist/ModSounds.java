@@ -22,7 +22,7 @@ public class ModSounds {
         return se;
     }
 
-    public static final SoundEvent SE_PLAYERDEAD = getThtSoundEvent("thtplayerdeath");
+    public static final SoundEvent SE_PLAYERDEAD = getThtSoundEvent("thtplayerdead");
     public static final SoundEvent SE_PLAYERPAUSE = getThtSoundEvent("thtpause");
 
     @SubscribeEvent

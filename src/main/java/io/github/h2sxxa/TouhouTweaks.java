@@ -23,6 +23,4 @@ public class TouhouTweaks {
         logger=event.getModLog();
         ModSounds.initModSounds();
     }
-    
-
 }
