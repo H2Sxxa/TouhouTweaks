@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.github.h2sxxa.Consts;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.audio.ISound;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -20,6 +22,13 @@ public class ModSounds {
         SoundEvent se  = new SoundEvent(new ResourceLocation(Consts.MODID, pathIn)).setRegistryName(Consts.MODID, pathIn);
         SOUNDS.add(se);
         return se;
+    }
+
+    public static void playClientSound(ISound sound){
+        Minecraft mc = Minecraft.getMinecraft();
+        if (mc != null){
+            mc.getSoundHandler().playSound(sound);
+        }
     }
 
     public static final SoundEvent SE_PLAYERDEAD = getThtSoundEvent("thtplayerdead");

@@ -10,14 +10,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
 
 @Mixin(Minecraft.class)
-public class MixinMinecraft {
-    @Inject(method ="displayInGameMenu", at = @At(value="RETURN"),remap=false)
+public abstract class MixinMinecraft {
+    @Inject(method ="displayInGameMenu", at = @At(value="RETURN"))
     public void ondisplayInGameMenu(CallbackInfo ci){
-        Minecraft mc = Minecraft.getMinecraft();
-        if (mc != null){
-            System.out.println("player pause");
-            mc.getSoundHandler().playSound(PositionedSoundRecord.getRecord(ModSounds.SE_PLAYERPAUSE, 1.0F, 1.0F));
-        }
+        ModSounds.playClientSound(PositionedSoundRecord.getRecord(ModSounds.SE_PLAYERPAUSE, 1.0F, 1.0F));
     }
-
 }
