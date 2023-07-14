@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 )
 public class TouhouTweaks {
     @Instance(Consts.MODID)
-    public TouhouTweaks modInstance;
+    public static TouhouTweaks modInstance;
 
     public Logger logger;
 
