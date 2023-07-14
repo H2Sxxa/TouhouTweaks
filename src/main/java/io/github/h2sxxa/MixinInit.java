@@ -6,9 +6,6 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
-import com.google.common.collect.Lists;
-
-import net.minecraftforge.common.ForgeVersion;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import zone.rong.mixinbooter.IEarlyMixinLoader;
 
