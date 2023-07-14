@@ -14,10 +14,7 @@ import zone.rong.mixinbooter.IEarlyMixinLoader;
 
 
 
-@IFMLLoadingPlugin.Name("TouhouTweaks")
-@IFMLLoadingPlugin.MCVersion(ForgeVersion.mcVersion)
 public class MixinInit implements IFMLLoadingPlugin,IEarlyMixinLoader{
-    
     @Override
     public List<String> getMixinConfigs() {
         return Collections.singletonList("mixins.touhoutweaks.json");
