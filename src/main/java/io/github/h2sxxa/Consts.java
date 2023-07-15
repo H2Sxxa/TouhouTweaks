@@ -4,6 +4,7 @@ public class Consts {
     public final static String MODID = "touhoutweaks";
     public final static String NAME = "TouhouTweaks";
     public final static String DEPENDENCIES = "required-after:mixinbooter";
-
-    public final static boolean IS_REMAP = true;
+    
+    //when package , remember to set it as true
+    public final static boolean IS_REMAP = false;
 }
