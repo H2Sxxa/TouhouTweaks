@@ -10,7 +10,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(
     modid = Consts.MODID,
-    name = Consts.NAME
+    name = Consts.NAME,
+    dependencies = Consts.DEPENDENCIES
 )
 public class TouhouTweaks {
     @Instance(Consts.MODID)

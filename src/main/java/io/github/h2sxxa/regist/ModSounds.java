@@ -18,8 +18,8 @@ public class ModSounds {
 
     public static final List<SoundEvent> SOUNDS = new ArrayList<SoundEvent>();
 
-    private static SoundEvent getThtSoundEvent(String pathIn){
-        SoundEvent se  = new SoundEvent(new ResourceLocation(Consts.MODID, pathIn)).setRegistryName(Consts.MODID, pathIn);
+    private static SoundEvent getThtSoundEvent(String soundName){
+        SoundEvent se  = new SoundEvent(new ResourceLocation(Consts.MODID, soundName)).setRegistryName(Consts.MODID, soundName);
         SOUNDS.add(se);
         return se;
     }
@@ -33,6 +33,8 @@ public class ModSounds {
 
     public static final SoundEvent SE_PLAYERDEAD = getThtSoundEvent("thtplayerdead");
     public static final SoundEvent SE_PLAYERPAUSE = getThtSoundEvent("thtpause");
+    public static final SoundEvent SE_SCREENSHOT = getThtSoundEvent("thtscreenshot");
+    public static final SoundEvent SE_LEVITATION = getThtSoundEvent("thtlevitation");
 
     @SubscribeEvent
     public static void onSoundEvenrRegistration(RegistryEvent.Register<SoundEvent> event) {

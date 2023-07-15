@@ -1,6 +1,6 @@
 {
     "thtplayerdead": {
-        "category": "player",
+        "category": "sound",
         "subtitle": "touhoutweaks.sound.thtplayerdead",
         "sounds": [
             "touhoutweaks:sounddead"
@@ -11,6 +11,20 @@
         "subtitle": "touhoutweaks.sound.thtpause",
         "sounds": [
             "touhoutweaks:soundpause"
+        ]
+    },
+    "thtscreenshot":{
+        "category": "sound",
+        "subtitle": "touhoutweaks.sound.thtscreenshot",
+        "sounds": [
+            "touhoutweaks:soundscreenshot"
+        ]
+    },
+    "thtlevitation":{
+        "category": "sound",
+        "subtitle": "touhoutweaks.sound.thtlevitation",
+        "sounds": [
+            "touhoutweaks:soundlevitation"
         ]
     }
 }
