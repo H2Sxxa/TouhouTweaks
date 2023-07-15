@@ -26,5 +26,12 @@
         "sounds": [
             "touhoutweaks:soundlevitation"
         ]
+    },
+    "thtstrength":{
+        "category":"sound",
+        "subtitle":"touhoutweaks.sound.thtstrength",
+        "sounds":[
+            "touhoutweaks:soundstrength"
+        ]
     }
 }

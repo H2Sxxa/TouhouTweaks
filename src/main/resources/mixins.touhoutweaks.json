@@ -8,6 +8,7 @@
     "client":[
       "MixinI18n",
       "MixinMinecraft",
-      "MixinEntityLivingBase"
+      "MixinEntityLivingBase",
+      "MixinCrashReport"
     ]
   }

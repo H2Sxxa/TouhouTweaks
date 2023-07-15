@@ -8,20 +8,16 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(
-    modid = Consts.MODID,
-    name = Consts.NAME,
-    dependencies = Consts.DEPENDENCIES
-)
+@Mod(modid = Consts.MODID, name = Consts.NAME, dependencies = Consts.DEPENDENCIES)
 public class TouhouTweaks {
     @Instance(Consts.MODID)
     public static TouhouTweaks modInstance;
 
     public Logger logger;
 
-    @EventHandler public void preInit(FMLPreInitializationEvent event)
-    {
-        logger=event.getModLog();
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+        logger = event.getModLog();
         ModSounds.initModSounds();
     }
 }

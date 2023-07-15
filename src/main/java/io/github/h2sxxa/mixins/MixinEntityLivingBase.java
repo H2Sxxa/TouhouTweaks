@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import io.github.h2sxxa.Consts;
 import io.github.h2sxxa.regist.ModSounds;
-import io.github.h2sxxa.lib.Utils;
+import io.github.h2sxxa.libs.Utils;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -23,6 +23,7 @@ public class MixinEntityLivingBase {
             if (entity instanceof EntityPlayer){
                 EntityPlayer player = (EntityPlayer)entity;
                 Utils.matchPlayPotionSound(ModSounds.SE_LEVITATION,MobEffects.LEVITATION,player);
+                Utils.matchPlayPotionSound(ModSounds.SE_STRENGTH, MobEffects.STRENGTH, player);
             }
         }
     }

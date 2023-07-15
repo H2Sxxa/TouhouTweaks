@@ -35,6 +35,7 @@ public class ModSounds {
     public static final SoundEvent SE_PLAYERPAUSE = getThtSoundEvent("thtpause");
     public static final SoundEvent SE_SCREENSHOT = getThtSoundEvent("thtscreenshot");
     public static final SoundEvent SE_LEVITATION = getThtSoundEvent("thtlevitation");
+    public static final SoundEvent SE_STRENGTH = getThtSoundEvent("thtstrength");
 
     @SubscribeEvent
     public static void onSoundEvenrRegistration(RegistryEvent.Register<SoundEvent> event) {
