@@ -21,5 +21,5 @@ public class Consts {
 
     public final static boolean DONT_REMAP = false;
     //when package , remember to set it as true
-    public final static boolean REMAP = false;
+    public final static boolean REMAP = true;
 }
