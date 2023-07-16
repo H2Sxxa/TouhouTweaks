@@ -14,9 +14,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
 
-@Mixin(value = EntityLivingBase.class, remap = Consts.IS_REMAP)
+@Mixin(value = EntityLivingBase.class)
 public class MixinEntityLivingBase {
-    @Inject(method = "addPotionEffect", at = @At(value = "HEAD"))
+    @Inject(method = "addPotionEffect", at = @At(value = "HEAD"),remap = Consts.REMAP)
     private void onaddPotionEffect(PotionEffect potioneffectIn, CallbackInfo ci) {
         EntityLivingBase entity = (EntityLivingBase) (Object) this;
         if (entity instanceof EntityPlayer) {

@@ -19,6 +19,7 @@ public class Consts {
         "Sanae!Please cause miracles to occur and save my Game from crashing!"
     };
 
+    public final static boolean DONT_REMAP = false;
     //when package , remember to set it as true
-    public final static boolean IS_REMAP = false;
+    public final static boolean REMAP = false;
 }

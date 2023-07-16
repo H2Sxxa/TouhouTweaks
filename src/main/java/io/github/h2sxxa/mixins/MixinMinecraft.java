@@ -11,9 +11,9 @@ import io.github.h2sxxa.regist.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
 
-@Mixin(value=Minecraft.class, remap = Consts.IS_REMAP)
+@Mixin(value=Minecraft.class)
 public class MixinMinecraft {
-    @Inject(method = "displayInGameMenu", at = @At(value = "RETURN"))
+    @Inject(method = "displayInGameMenu", at = @At(value = "RETURN"),remap = Consts.REMAP)
     private void ondisplayInGameMenu(CallbackInfo ci) {
         if (Display.isActive()) {
             ModSounds.playClientSound(PositionedSoundRecord.getRecord(ModSounds.SE_PLAYERPAUSE, 1.0F, 1.0F));

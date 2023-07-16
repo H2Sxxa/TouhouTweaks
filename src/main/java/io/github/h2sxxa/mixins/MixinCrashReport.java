@@ -1,19 +1,18 @@
 package io.github.h2sxxa.mixins;
 
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import io.github.h2sxxa.Consts;
 import net.minecraft.crash.CrashReport;
 
-@Mixin(value = CrashReport.class, remap = Consts.IS_REMAP)
+@Mixin(value = CrashReport.class)
 public class MixinCrashReport {
-    /**
-     * @reason Static method overwrite ,without limiting
-     * @author H2Sxxa
-     */
-    @Overwrite
-    private static String getWittyComment() {
+    @Inject(method = "getWittyComment", at = @At(value = "RETURN"),cancellable = true, remap = Consts.REMAP)
+    private static void ongetWittyComment(CallbackInfoReturnable<String> cir) {
+        System.out.println("We mixin crashreport successfully");
         String[] astring = new String[] { "Who set us up the TNT?",
                 "Everything's going to plan. No, really, that was supposed to happen.", "Uh... Did I do that?", "Oops.",
                 "Why did you do that?", "I feel sad now :(", "My bad.", "I'm sorry, Dave.", "I let you down. Sorry :(",
@@ -36,9 +35,9 @@ public class MixinCrashReport {
         }
 
         try {
-            return nstring[(int) (System.nanoTime() % (long) nstring.length)];
+            cir.setReturnValue(nstring[(int) (System.nanoTime() % (long) nstring.length)]);
         } catch (Throwable var2) {
-            return "Witty comment unavailable :(";
+            cir.setReturnValue("Witty comment unavailable :(");
         }
 
     }
