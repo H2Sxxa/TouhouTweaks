@@ -4,7 +4,9 @@ A mod brings Touhou meme to Minecraft
 
 Developing with MixinBooter 7.1，Mixin 0.8.1 and Forge 1.12.2(2859)。
 
-The mod's stuff
+## *Notice: Need the dependence mod [**Mixinbooter**](https://www.curseforge.com/minecraft/mc-mods/mixin-boote)*
+
+## The mod's features
 
 - play sound when pausing
 - play sound when player dead
