@@ -16,9 +16,8 @@ public class TouhouTweaks {
     public Logger logger;
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event) throws Exception{
+    public void preInit(FMLPreInitializationEvent event){
         logger = event.getModLog();
         ModSounds.initModSounds();
-        throw new Exception("Test Crash");
     }
 }
