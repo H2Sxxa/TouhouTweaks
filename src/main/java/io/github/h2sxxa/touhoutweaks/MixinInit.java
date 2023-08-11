@@ -1,4 +1,4 @@
-package io.github.h2sxxa;
+package io.github.h2sxxa.touhoutweaks;
 
 import java.util.Collections;
 import java.util.List;

@@ -1,4 +1,4 @@
-package io.github.h2sxxa;
+package io.github.h2sxxa.touhoutweaks;
 
 public class Consts {
     public final static String MODID = "touhoutweaks";

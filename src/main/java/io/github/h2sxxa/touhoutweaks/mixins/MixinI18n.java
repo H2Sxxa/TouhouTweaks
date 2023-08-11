@@ -1,9 +1,10 @@
-package io.github.h2sxxa.mixins;
+package io.github.h2sxxa.touhoutweaks.mixins;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import io.github.h2sxxa.Consts;
+
+import io.github.h2sxxa.touhoutweaks.Consts;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.resources.Locale;
 

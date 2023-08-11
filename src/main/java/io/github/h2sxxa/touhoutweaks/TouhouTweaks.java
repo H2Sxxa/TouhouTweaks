@@ -1,8 +1,8 @@
-package io.github.h2sxxa;
+package io.github.h2sxxa.touhoutweaks;
 
 import org.apache.logging.log4j.Logger;
 
-import io.github.h2sxxa.regist.ModSounds;
+import io.github.h2sxxa.touhoutweaks.regist.ModSounds;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;

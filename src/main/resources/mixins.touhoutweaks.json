@@ -1,10 +1,9 @@
 {
-    "package": "io.github.h2sxxa.mixins",
+    "package": "io.github.h2sxxa.touhoutweaks.mixins",
     "refmap": "mixins.touhoutweaks.refmap.json",
     "target": "@env(DEFAULT)",
     "minVersion": "0.8",
     "compatibilityLevel": "JAVA_8",
-    "mixins": [],
     "client":[
       "MixinI18n",
       "MixinMinecraft",

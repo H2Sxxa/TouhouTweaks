@@ -1,12 +1,11 @@
-package io.github.h2sxxa.events;
+package io.github.h2sxxa.touhoutweaks.events;
 
-import io.github.h2sxxa.regist.ModSounds;
-import io.github.h2sxxa.Consts;
+import io.github.h2sxxa.touhoutweaks.regist.ModSounds;
+import io.github.h2sxxa.touhoutweaks.Consts;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.client.event.ScreenshotEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.entity.player.PlayerPickupXpEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

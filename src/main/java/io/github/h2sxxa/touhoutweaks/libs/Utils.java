@@ -1,11 +1,11 @@
-package io.github.h2sxxa.libs;
+package io.github.h2sxxa.touhoutweaks.libs;
 
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.potion.Potion;
 import net.minecraft.util.SoundEvent;
 
-import io.github.h2sxxa.regist.ModSounds;
+import io.github.h2sxxa.touhoutweaks.regist.ModSounds;
 
 public class Utils {
     public static void matchPlayPotionSound(SoundEvent sound, Potion potion, EntityPlayer player) {

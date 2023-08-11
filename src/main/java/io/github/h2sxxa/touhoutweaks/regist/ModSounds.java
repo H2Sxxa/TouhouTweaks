@@ -1,9 +1,9 @@
-package io.github.h2sxxa.regist;
+package io.github.h2sxxa.touhoutweaks.regist;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import io.github.h2sxxa.Consts;
+import io.github.h2sxxa.touhoutweaks.Consts;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.ISound;
 import net.minecraft.util.ResourceLocation;
