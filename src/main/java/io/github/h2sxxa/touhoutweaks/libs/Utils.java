@@ -9,10 +9,8 @@ import io.github.h2sxxa.touhoutweaks.regist.ModSounds;
 
 public class Utils {
     public static void matchPlayPotionSound(SoundEvent sound, Potion potion, EntityPlayer player) {
-        if (!player.isPotionActive(potion)) {
+        if (player.isPotionActive(potion)) {
             ModSounds.playClientSound(PositionedSoundRecord.getRecord(sound, 1.0F, 1.0F));
         }
-
     }
-
 }
