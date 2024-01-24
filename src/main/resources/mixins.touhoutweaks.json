@@ -4,10 +4,10 @@
     "target": "@env(DEFAULT)",
     "minVersion": "0.8",
     "compatibilityLevel": "JAVA_8",
-    "client":[
-      "MixinI18n",
-      "MixinMinecraft",
-      "MixinEntityLivingBase",
-      "MixinCrashReport"
+    "client": [
+        "MixinI18n",
+        "MixinMinecraft",
+        "MixinEntityLivingBase",
+        "MixinCrashReport"
     ]
-  }
+}

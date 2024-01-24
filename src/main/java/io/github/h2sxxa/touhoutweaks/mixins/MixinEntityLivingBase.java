@@ -8,7 +8,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import io.github.h2sxxa.touhoutweaks.config.THTConfigs;
 import io.github.h2sxxa.touhoutweaks.regist.ModSounds;
 import io.github.h2sxxa.touhoutweaks.Consts;
-import io.github.h2sxxa.touhoutweaks.libs.Utils;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -23,8 +22,10 @@ public class MixinEntityLivingBase {
         if (entity instanceof EntityPlayer) {
             if (THTConfigs.PotionSoundEffect) {
                 EntityPlayer player = (EntityPlayer) entity;
-                Utils.matchPlayPotionSound(ModSounds.SE_LEVITATION, MobEffects.LEVITATION, player);
-                Utils.matchPlayPotionSound(ModSounds.SE_STRENGTH, MobEffects.STRENGTH, player);
+                ModSounds.matchPlayPotionSound(ModSounds.SE_LEVITATION, potioneffectIn.getPotion(),
+                        MobEffects.LEVITATION, player);
+                ModSounds.matchPlayPotionSound(ModSounds.SE_STRENGTH, potioneffectIn.getPotion(), MobEffects.STRENGTH,
+                        player);
             }
         }
 
